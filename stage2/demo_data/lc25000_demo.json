@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/LC25000/lung_image_sets/lung_scc/lungscc877",
+  "image": "lc25000__Dataset4EVLF__LC25000__lung_image_sets__lung_scc__lungscc877.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Lung Squamous Cell Carcinoma",
+  "dataset": "LC25000",
+  "cot": "Sheets of atypical squamoid cells with pleomorphic hyperchromatic nuclei and visible intercellular bridges are present.\n<kw>cellular_atypia</kw>\n<kw>intercellular_bridges</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/lung_image_sets/lung_aca/lungaca4080",
+  "image": "lc25000__Dataset4EVLF__LC25000__lung_image_sets__lung_aca__lungaca4080.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Lung Adenocarcinoma",
+  "dataset": "LC25000",
+  "cot": "Sheets and clusters of pleomorphic epithelial cells with enlarged hyperchromatic nuclei, conspicuous nucleoli, and moderate cytoplasm are present.\n<kw>pleomorphic_epithelial_cells</kw>\n<kw>prominent_nucleoli</kw>\n<kw>hyperchromatic_nuclei</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/lung_image_sets/lung_scc/lungscc4780",
+  "image": "lc25000__Dataset4EVLF__LC25000__lung_image_sets__lung_scc__lungscc4780.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Lung Squamous Cell Carcinoma",
+  "dataset": "LC25000",
+  "cot": "Dense aggregates of atypical squamous cells with visible intercellular bridges, pleomorphic hyperchromatic nuclei, and occasional prominent nucleoli.\n<kw>intercellular_bridges</kw>\n<kw>cellular_atypia</kw>\n<kw>hyperchromatic_nuclei</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/colon_image_sets/colon_n/colonn3835",
+  "image": "lc25000__Dataset4EVLF__LC25000__colon_image_sets__colon_n__colonn3835.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Colon Normal",
+  "dataset": "LC25000",
+  "cot": "Closely packed colonic crypts lined by single-layer columnar epithelium with basally located, uniform nuclei and abundant pale goblet cell mucin in luminal spaces.\n<kw>organized_glands</kw>\n<kw>basally_located_nuclei</kw>\n<kw>goblet_cells</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/lung_image_sets/lung_aca/lungaca2725",
+  "image": "lc25000__Dataset4EVLF__LC25000__lung_image_sets__lung_aca__lungaca2725.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Lung Adenocarcinoma",
+  "dataset": "LC25000",
+  "cot": "Epithelial cells form irregular gland-like profiles with crowded, pleomorphic, hyperchromatic nuclei and focal luminal clearing.\n<kw>irregular_glandular_structure</kw>\n<kw>cellular_atypia</kw>\n<kw>hyperchromasia</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/colon_image_sets/colon_aca/colonca4931",
+  "image": "lc25000__Dataset4EVLF__LC25000__colon_image_sets__colon_aca__colonca4931.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Colon Adenocarcinoma",
+  "dataset": "LC25000",
+  "cot": "Irregular, crowded glandular and tubular structures lined by atypical epithelial cells with enlarged, hyperchromatic, pleomorphic nuclei and visible intraluminal mucin.\n<kw>irregular_glands</kw>\n<kw>nuclear_pleomorphism</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/colon_image_sets/colon_n/colonn4776",
+  "image": "lc25000__Dataset4EVLF__LC25000__colon_image_sets__colon_n__colonn4776.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Colon Normal",
+  "dataset": "LC25000",
+  "cot": "Closely packed colonic glands with round lumina, columnar epithelial cells with basally located, relatively uniform nuclei and mucin-filled goblet cell vacuoles.\n<kw>organized_glands</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/colon_image_sets/colon_n/colonn2944",
+  "image": "lc25000__Dataset4EVLF__LC25000__colon_image_sets__colon_n__colonn2944.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Colon Normal",
+  "dataset": "LC25000",
+  "cot": "Closely packed glandular epithelium with mucin-filled goblet cells and basally oriented, relatively uniform oval nuclei.\n<kw>organized_glands</kw>\n<kw>goblet_cells</kw>\n<kw>uniform_nuclei</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/lung_image_sets/lung_aca/lungaca80",
+  "image": "lc25000__Dataset4EVLF__LC25000__lung_image_sets__lung_aca__lungaca80.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Lung Adenocarcinoma",
+  "dataset": "LC25000",
+  "cot": "Branching glandular formations with luminal spaces lined by crowded epithelial cells showing nuclear enlargement, pleomorphism and hyperchromasia.\n<kw>irregular_glandular_structure</kw>\n<kw>cellular_atypia</kw>\n<kw>hyperchromatic_nuclei</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/LC25000/colon_image_sets/colon_n/colonn2585",
+  "image": "lc25000__Dataset4EVLF__LC25000__colon_image_sets__colon_n__colonn2585.jpeg",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: colon adenocarcinoma, colon normal, lung adenocarcinoma, lung normal, lung squamous cell carcinoma.",
+  "solution": "Colon Normal",
+  "dataset": "LC25000",
+  "cot": "Well-formed colonic crypts lined by a single layer of columnar epithelial cells with basally located, uniformly oval nuclei and frequent mucin-filled goblet cells.\n<kw>organized_glands</kw>\n<kw>uniform_nuclei</kw>\n<kw>goblet_cells</kw>"
+ }
+]

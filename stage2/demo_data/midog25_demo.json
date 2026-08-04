@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/8080",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__8080.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Atypical Mitosis",
+  "dataset": "MIDOG25",
+  "cot": "A mitotic cell with condensed, unevenly distributed chromatin and hyperchromatic nuclear material, yielding an asymmetric appearance.\n<kw>atypical_mitosis</kw>\n<kw>asymmetric_division</kw>\n<kw>hyperchromatic_nucleus</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/5859",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__5859.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Normal",
+  "dataset": "MIDOG25",
+  "cot": "Clusters of cells with round to oval basophilic nuclei, variable nuclear size and chromatin density, and eosinophilic cytoplasm with patchy staining.\n<kw>basophilic_nuclei</kw>\n<kw>variable_nuclear_size</kw>\n<kw>eosinophilic_cytoplasm</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/3319",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__3319.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Normal",
+  "dataset": "MIDOG25",
+  "cot": "Clusters of round to ovoid cells with distinct nuclear membranes; nuclei show finely granular chromatin and cells are similar in size.\n<kw>intact_nuclear_membrane</kw>\n<kw>round_nuclei</kw>\n<kw>similar_cell_size</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/10625",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__10625.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Atypical Mitosis",
+  "dataset": "MIDOG25",
+  "cot": "Cells show enlarged, hyperchromatic nuclei with frequent multinucleation and atypical mitotic figures.\n<kw>multinucleation</kw>\n<kw>hyperchromatic_nuclei</kw>\n<kw>atypical_mitosis</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/9927",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__9927.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Normal",
+  "dataset": "MIDOG25",
+  "cot": "Numerous cells with visible nuclei; cells are similar in size, nuclei show variable chromatin density, and staining appears relatively homogeneous.\n<kw>visible_nuclei</kw>\n<kw>similar_cell_size</kw>\n<kw>homogeneous_staining</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/2284",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__2284.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Normal",
+  "dataset": "MIDOG25",
+  "cot": "Clusters of polygonal cells with round to oval nuclei exhibiting fine, evenly distributed chromatin; cell sizes are similar and cytoplasmic and nuclear staining is uniform across the field.\n<kw>cell_clusters</kw>\n<kw>round_nuclei</kw>\n<kw>uniform_staining</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/11851",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__11851.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Normal",
+  "dataset": "MIDOG25",
+  "cot": "Multiple round to oval nuclei are visible with varying chromatin density; surrounding cytoplasm is pale eosinophilic and the field shows relatively even hematoxylin-eosin staining.\n<kw>visible_nuclei</kw>\n<kw>eosinophilic_cytoplasm</kw>\n<kw>even_staining</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/5651",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__5651.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Normal",
+  "dataset": "MIDOG25",
+  "cot": "Cells show round to oval nuclei, similar cell sizes, and relatively uniform cytoplasmic staining.\n<kw>round_oval_nuclei</kw>\n<kw>uniform_cell_size</kw>\n<kw>homogeneous_staining</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/7522",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__7522.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Atypical Mitosis",
+  "dataset": "MIDOG25",
+  "cot": "A cell contains a dense, irregular, dark intranuclear or intracytoplasmic body with adjacent cells showing condensed, hyperchromatic nuclei.\n<kw>atypical_mitosis</kw>\n<kw>abnormal_nuclear_morphology</kw>\n<kw>condensed_chromatin</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/MIDOG25/images/6153",
+  "image": "midog25__Dataset4EVLF__MIDOG25__images__6153.png",
+  "problem": "Analyze the given pathology image for diagnosis. The possible diagnoses are: normal, atypical.",
+  "solution": "Atypical Mitosis",
+  "dataset": "MIDOG25",
+  "cot": "Cell in mitosis with condensed, dark-staining chromosomes clustered around multiple spindle poles, forming three or more radial chromosome groups.\n<kw>multipolar_spindle</kw>\n<kw>radial_chromosome_groups</kw>"
+ }
+]

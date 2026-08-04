@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0065865",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0065865.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Solar Lentigo",
+  "dataset": "BCN20000",
+  "cot": "Clustered brown macules with sharp demarcation, varying tan to dark brown pigmentation and focal darker dots/peppering.\n<kw>clustered_macules</kw>\n<kw>sharp_demarcation</kw>\n<kw>peppering</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0071875",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0071875.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Melanoma",
+  "dataset": "BCN20000",
+  "cot": "Asymmetric lesion with irregular, poorly defined borders and heterogeneous brown-to-tan pigmentation adjacent to pink erythematous skin.\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>\n<kw>color_variegation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0069755",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0069755.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Actinic Keratosis",
+  "dataset": "BCN20000",
+  "cot": "Central pink-red patch with focal superficial keratotic scale and small crust; surrounding fine linear and tortuous telangiectatic vessels on an erythematous background.\n<kw>erythematous_background</kw>\n<kw>linear_vessels</kw>\n<kw>keratin_scale</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0055176",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0055176.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Actinic Keratosis",
+  "dataset": "BCN20000",
+  "cot": "Patchy erythematous background with fine superficial scaling, scattered tan-brown macules, and multiple short terminal hairs over the area.\n<kw>surface_scale</kw>\n<kw>erythematous_background</kw>\n<kw>terminal_hairs</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0063753",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0063753.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Melanoma",
+  "dataset": "BCN20000",
+  "cot": "Asymmetric lesion with irregular borders, uneven brown and pink color variegation, and a central blue-gray nodular area.\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>\n<kw>blue_gray_area</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0070486",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0070486.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Actinic Keratosis",
+  "dataset": "BCN20000",
+  "cot": "Central irregular tan-brown patch with variable pigmentation and indistinct borders on an erythematous background with fine surface scaling.\n<kw>erythematous_background</kw>\n<kw>uneven_pigmentation</kw>\n<kw>keratin_scale</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0057121",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0057121.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Squamous Cell Carcinoma",
+  "dataset": "BCN20000",
+  "cot": "Raised pink nodular lesion with a central tan-brown adherent keratinous plug and peripheral white scaling; surface appears irregular.\n<kw>keratin_mass</kw>\n<kw>hyperkeratosis</kw>\n<kw>irregular_surface</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0062743",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0062743.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Actinic Keratosis",
+  "dataset": "BCN20000",
+  "cot": "Central patch of faint diffuse erythema with patchy white scaling and subtle tan-brown reticular pigmentation; multiple short terminal hairs cross the lesion.\n<kw>erythematous_background</kw>\n<kw>surface_scaling</kw>\n<kw>terminal_hairs</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0071256",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0071256.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Actinic Keratosis",
+  "dataset": "BCN20000",
+  "cot": "Brown plaque with coarse scaly surface and multiple intersecting white linear scales crossing the lesion. Peripheral surrounding skin appears lighter.\n<kw>keratin_scale</kw>\n<kw>white_linear_scaling</kw>\n<kw>brown_pigmentation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BCN20000/images/ISIC_0060470",
+  "image": "bcn20000__Dataset4EVLF__BCN20000__images__ISIC_0060470.JPG",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: melanoma, squamous cell carcinoma, nevus, basal cell carcinoma, seborrheic keratosis, actinic keratosis, solar lentigo, dermatofibroma, vascular lesion.",
+  "solution": "Seborrheic Keratosis",
+  "dataset": "BCN20000",
+  "cot": "Irregular brown lesion with a darker central area and a paler peripheral rim, containing small whitish-yellow keratotic clods and focal surface scaling.\n<kw>milia_like_cysts</kw>\n<kw>sharp_demarcation</kw>"
+ }
+]

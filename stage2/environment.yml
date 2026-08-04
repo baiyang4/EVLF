@@ -1,0 +1,38 @@
+name: evlf-r1
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # Core training stack (versions verified on CUDA 12.x, 2×H200)
+      - torch==2.7.0
+      - transformers==4.49.0
+      - accelerate==1.7.0
+      - deepspeed==0.16.9
+      - trl==0.16.0
+      - peft==0.15.2
+      - timm==1.0.15
+
+      # Modeling / data
+      - einops>=0.8.0
+      - sentencepiece>=0.1.99
+      - safetensors>=0.3.3
+      - pillow
+      - pyyaml
+      - numpy
+      - huggingface-hub[cli]>=0.19.2,<1.0
+
+      # Reasoning reward service
+      - fastapi
+      - uvicorn
+      - requests
+
+      # Logging
+      - wandb>=0.19.1
+
+      # FlashAttention-2 — install separately against your CUDA/torch build:
+      #   pip install flash-attn --no-build-isolation

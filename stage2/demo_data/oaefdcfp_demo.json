@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/1256_OD_f_1",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__1256_OD_f_1.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "No DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Macula is clear with a distinct foveal reflex; the optic disc is well defined with a visible cup, and retinal arterioles and venules follow normal caliber without hemorrhages or exudates.\n<kw>clear_macula</kw>\n<kw>distinct_foveal_reflex</kw>\n<kw>well_defined_optic_disc</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/1233_OD_f_2",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__1233_OD_f_2.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "No DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Macula centered with visible foveal reflex and no hemorrhages or exudates. Optic disc well-defined with normal color and unremarkable retinal vessels.\n<kw>clear_macula</kw>\n<kw>normal_foveal_reflex</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/1266_OD_f_2",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__1266_OD_f_2.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "No DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Macula appears clear with a distinct foveal reflex; optic disc is well defined and retinal vessels appear normal.\n<kw>clear_macula</kw>\n<kw>normal_foveal_reflex</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/1335_OD_f_1",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__1335_OD_f_1.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "No DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Macula appears clear with a visible foveal reflex; optic disc well-defined, retinal vessels unremarkable, and no retinal thickening or hemorrhages observed.\n<kw>clear_macula</kw>\n<kw>normal_foveal_reflex</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/1970_OI_f_1",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__1970_OI_f_1.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "No DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Macula unremarkable with a distinct foveal reflex; optic disc has sharp margins and retinal vessels of normal caliber, without visible hemorrhages or exudates.\n<kw>clear_macula</kw>\n<kw>normal_foveal_reflex</kw>\n<kw>normal_optic_disc</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/2028_OI_f_2",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__2028_OI_f_2.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Multiple yellow-white punctate hard exudates concentrated temporal to the macula with a blurred, elevated macular reflex; optic disc is round and well-circumscribed.\n<kw>hard_exudate</kw>\n<kw>macular_thickening</kw>\n<kw>optic_disc</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/1198_OD_f_1",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__1198_OD_f_1.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Clustered yellow-white hard exudates temporal to the fovea with mild macular mottling; optic disc well-circumscribed.\n<kw>hard_exudate</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/0665_OD_f_1",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__0665_OD_f_1.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Multiple small yellow-white hard exudates are scattered across the posterior pole; the optic disc and major retinal vessels are visible.\n<kw>hard_exudate</kw>\n<kw>posterior_pole</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/1116_OD_f_1",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__1116_OD_f_1.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Clustered yellow hard exudates in the macula with surrounding mild central retinal haze and reduced foveal reflex.\n<kw>hard_exudate</kw>\n<kw>macular_haze</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/OAEFD_CFP/cfp_images/0331_OI_f_1",
+  "image": "oaefdcfp__Dataset4EVLF__OAEFD_CFP__cfp_images__0331_OI_f_1.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: no dme, dme.",
+  "solution": "DME",
+  "dataset": "OAEFD_CFP",
+  "cot": "Round darkened area at the foveal center with multiple small perifoveal yellow deposits scattered temporally and superiorly.\n<kw>hard_exudate</kw>\n<kw>macular_thickening</kw>"
+ }
+]

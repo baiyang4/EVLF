@@ -1,0 +1,9 @@
+{
+  "demo_slake": {
+    "root": "demo/images",
+    "annotation": "demo/demo.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 100
+  }
+}

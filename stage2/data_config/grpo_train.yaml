@@ -1,0 +1,95 @@
+# kw-tagged GRPO set -- see build_kw_dataset.py.
+# = think_align_v2_full.yaml verbatim, with cls_vindr_cls / cls_nih_cls replaced by
+# the kw balanced builds. Pairs with SFT init ..._papilafix_merged (kw).
+# Point THINK_REF_POOL at training_data so distractors match.
+datasets:
+  - json_path: /path/to/training_data/biomedparse.json
+    image_base: "/mnt/data/by/data/grounding/biomeddata_extracted2"
+    task_type: "grounding"
+  - json_path: /path/to/training_data/vindr_grounding.json
+    image_base: "/mnt/data/by/data/grounding"
+    task_type: "grounding"
+  - json_path: /path/to/training_data/cls_AIROGS.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_BCN20000.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_BRSET.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_BUSI.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_EYEPACS.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_Fetal_Planes.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_HAM10000.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_LC25000.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_MIDOG25.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_OAEFD_CFP.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_OAEFD_OCT.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_PAPILA.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_RAPIER.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_bloodmnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_breastmnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_chestmnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_dermamnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_nih_cls.json
+    image_base: "/home/baiyang/project/Vitask/data/nih-chest-xrays"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_octmnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_organamnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_organcmnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_organsmnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_pathmnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_pneumoniamnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_retinamnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_rsna_pneumonia.json
+    image_base: "/mnt/data2/EVLF_rebuttal"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_tissuemnist.json
+    image_base: "/mnt/data/by/data/cls"
+    task_type: "cls"
+  - json_path: /path/to/training_data/cls_vindr_cls.json
+    image_base: "/mnt/data/by/data/grounding"
+    task_type: "cls"

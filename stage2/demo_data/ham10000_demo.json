@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0029947",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0029947.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Benign Keratosis",
+  "dataset": "HAM10000",
+  "cot": "Small, well-demarcated tan-brown waxy, stuck-on plaque with clustered dark comedo-like openings and an irregular surface.\n<kw>comedo_like_openings</kw>\n<kw>waxy_surface</kw>\n<kw>sharp_demarcation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0030521",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0030521.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Melanoma",
+  "dataset": "HAM10000",
+  "cot": "Pigmented lesion with asymmetric shape, irregular jagged borders and heterogeneous shades of brown from light to dark.\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>\n<kw>color_variegation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0032915",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0032915.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Melanoma",
+  "dataset": "HAM10000",
+  "cot": "Central pink-red patch with asymmetrical ovoid outline, irregular borders and focal areas of lighter and darker pigmentation; surface shows slight scaling and crusted texture.\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>\n<kw>color_variegation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0033785",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0033785.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Benign Keratosis",
+  "dataset": "HAM10000",
+  "cot": "Central brown crusted area with clustered small dark-red dots, surrounded by a ring of white scale and a sharply demarcated scaly border.\n<kw>scaling</kw>\n<kw>central_crust</kw>\n<kw>sharp_demarcation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0030060",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0030060.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Melanoma",
+  "dataset": "HAM10000",
+  "cot": "Central dark blue-black irregular patch adjacent to asymmetric light-to-medium brown pigmentation with uneven, irregular borders.\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>\n<kw>color_variegation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0031225",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0031225.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Basal Cell Carcinoma",
+  "dataset": "HAM10000",
+  "cot": "Irregular brown macular pigmentation with focal dark granules and scattered fine linear telangiectasias in the surrounding skin.\n<kw>irregular_pigmentation</kw>\n<kw>linear_telangiectasia</kw>\n<kw>blue_gray_granules</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0027964",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0027964.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Melanoma",
+  "dataset": "HAM10000",
+  "cot": "Pigmented lesion with asymmetric, irregular borders and heterogeneous color including dark brown, light brown, and a central blue-white area.\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>\n<kw>blue_white_veil</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0032873",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0032873.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Melanoma",
+  "dataset": "HAM10000",
+  "cot": "Dark, asymmetric pigmented lesion with irregular, poorly defined borders and marked color variegation including focal very dark brown to black areas.\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>\n<kw>color_variegation</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0034155",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0034155.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Basal Cell Carcinoma",
+  "dataset": "HAM10000",
+  "cot": "Lesion with central pale pink eroded area and peripheral brown-gray ovoid aggregates; scattered brown dots and surrounding whitish fibrotic areas are visible.\n<kw>blue_gray_ovoid_nests</kw>\n<kw>white_areas</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/HAM10000_clean/images/ISIC_0032662",
+  "image": "ham10000__Dataset4EVLF__HAM10000_clean__images__ISIC_0032662.jpg",
+  "problem": "Analyze the given dermoscopy image for diagnosis. The possible diagnoses are: actinic keratoses, basal cell carcinoma, benign keratosis, dermatofibroma, melanoma, melanocytic nevi, vascular lesions.",
+  "solution": "Melanoma",
+  "dataset": "HAM10000",
+  "cot": "Central structureless dark brown pigmentation with asymmetric, irregular borders and lighter peripheral brown areas.\n<kw>structureless_pigmentation</kw>\n<kw>asymmetric_shape</kw>\n<kw>irregular_border</kw>"
+ }
+]

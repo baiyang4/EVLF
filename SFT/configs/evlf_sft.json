@@ -1,0 +1,361 @@
+{
+  "medllm_518k": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/base/medmnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 518175
+  },
+  "AIROGS": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/base/AIROGS.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8770
+  },
+  "BRSET": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/base/BRSET.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 15446
+  },
+  "biomedparse": {
+    "root": "/mnt/data/by/data/grounding/biomeddata_extracted2",
+    "annotation": "data/train/base/biomedparse.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 388194
+  },
+  "vindr_grounding": {
+    "root": "/mnt/data/by/data/grounding",
+    "annotation": "data/train/base/vindr_grounding.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 27184
+  },
+  "slake": {
+    "root": "/mnt/data/by/data/vqa/SLAKE/imgs",
+    "annotation": "data/train/base/slake.jsonl",
+    "data_augment": false,
+    "repeat_time": 5,
+    "length": 9835
+  },
+  "vqa-rad": {
+    "root": "/mnt/data/by/data/vqa/VQA-RAD/images",
+    "annotation": "data/train/base/vqa_rad.jsonl",
+    "data_augment": false,
+    "repeat_time": 3,
+    "length": 1793
+  },
+  "path-vqa": {
+    "root": "/mnt/data/by/data/vqa/Path-VQA/img_train",
+    "annotation": "data/train/base/path_vqa.jsonl",
+    "data_augment": false,
+    "repeat_time": 10,
+    "length": 19654
+  },
+  "pmc-vqa": {
+    "root": "/mnt/data/by/data/vqa/PMC-VQA/images",
+    "annotation": "data/train/base/pmc_vqa.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 176948
+  },
+  "HAM10000": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/HAM10000.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8208
+  },
+  "rsna_pneumonia": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/rsna_pneumonia.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 18678
+  },
+  "BCN20000": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/BCN20000.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 9930
+  },
+  "MIDOG25": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/MIDOG25.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 8031
+  },
+  "LC25000": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/LC25000.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 17500
+  },
+  "BUSI": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/BUSI.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 546
+  },
+  "Fetal_Planes": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/Fetal_Planes.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 5806
+  },
+  "PAPILA": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/PAPILA.jsonl",
+    "data_augment": false,
+    "repeat_time": 2,
+    "length": 311
+  },
+  "RAPIER": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/RAPIER.jsonl",
+    "data_augment": false,
+    "repeat_time": 5,
+    "length": 4496
+  },
+  "EYEPACS": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/EYEPACS.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 35126
+  },
+  "vindr_cls_aimx_combined": {
+    "root": "/mnt/data/by/data/grounding",
+    "annotation": "data/train/vitask/vindr/aimx_combined/vindr_cls_train.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 12000
+  },
+  "nih_cls_aimx_combined": {
+    "root": "/home/baiyang/project/Vitask/data/nih-chest-xrays/",
+    "annotation": "data/train/vitask/nih-chest-xrays/aimx_combined/nih_cls_train.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 86524
+  },
+  "OAEFD_CFP": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/OAEFD_CFP.jsonl",
+    "data_augment": false,
+    "repeat_time": 2,
+    "length": 1087
+  },
+  "OAEFD_OCT": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/internvl_data/OAEFD_OCT.jsonl",
+    "data_augment": false,
+    "repeat_time": 2,
+    "length": 792
+  },
+  "biomedparse_cot_new": {
+    "root": "/mnt/data/by/data/grounding/biomeddata_extracted2",
+    "annotation": "data/train/training_data_grounding/conv/biomedparse.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 23659
+  },
+  "vindr_grounding_cot_new": {
+    "root": "/mnt/data/by/data/grounding",
+    "annotation": "data/train/training_data_grounding/conv/vindr_grounding.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6987
+  },
+  "slake_cot": {
+    "root": "/mnt/data/by/data/vqa/SLAKE/imgs",
+    "annotation": "data/train/training_data_vqa/conv/slake.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 3893
+  },
+  "vqa_rad_cot": {
+    "root": "/mnt/data/by/data/vqa/VQA-RAD/images",
+    "annotation": "data/train/training_data_vqa/conv/vqa_rad.jsonl",
+    "data_augment": false,
+    "repeat_time": 2,
+    "length": 789
+  },
+  "path_vqa_cot": {
+    "root": "/mnt/data/by/data/vqa/Path-VQA/img_train",
+    "annotation": "data/train/training_data_vqa/conv/path_vqa.jsonl",
+    "data_augment": false,
+    "repeat_time": 2,
+    "length": 1020
+  },
+  "pmc_vqa_cot": {
+    "root": "/mnt/data/by/data/vqa/PMC-VQA/images",
+    "annotation": "data/train/training_data_vqa/conv/pmc_vqa.jsonl",
+    "data_augment": false,
+    "repeat_time": 1,
+    "length": 6311
+  },
+  "retinamnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/retinamnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "OAEFD_CFP_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/OAEFD_CFP.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "AIROGS_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/AIROGS.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "BRSET_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/BRSET.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "EYEPACS_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/EYEPACS.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "octmnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/octmnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "OAEFD_OCT_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/OAEFD_OCT.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "rsna_pneumonia_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/rsna_pneumonia.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "pneumoniamnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/pneumoniamnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "vindr_cls_cot_clean": {
+    "root": "/mnt/data/by/data/grounding",
+    "annotation": "data/train/training_data_clean/conv/vindr_cls.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "nih_cls_cot_clean": {
+    "root": "/home/baiyang/project/Vitask/data/nih-chest-xrays",
+    "annotation": "data/train/training_data_clean/conv/nih_cls.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "chestmnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/chestmnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "RAPIER_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/RAPIER.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "organamnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/organamnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "organsmnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/organsmnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "organcmnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/organcmnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "LC25000_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/LC25000.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "MIDOG25_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/MIDOG25.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "pathmnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/pathmnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 1
+  },
+  "tissuemnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/tissuemnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "HAM10000_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/HAM10000.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "BCN20000_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/BCN20000.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "dermamnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/dermamnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "BUSI_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/BUSI.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "breastmnist_cot_clean": {
+    "root": "/mnt/data/by/data/cls",
+    "annotation": "data/train/training_data_clean/conv/breastmnist.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  },
+  "Fetal_Planes_cot_clean": {
+    "root": "/mnt/data2/EVLF_rebuttal",
+    "annotation": "data/train/training_data_clean/conv/Fetal_Planes.jsonl",
+    "data_augment": false,
+    "repeat_time": 2
+  }
+}

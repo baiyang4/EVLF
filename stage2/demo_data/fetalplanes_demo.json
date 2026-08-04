@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00254_Plane4_1_of_1",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00254_Plane4_1_of_1.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Maternal cervix",
+  "dataset": "Fetal_Planes",
+  "cot": "Transvaginal image of the maternal cervix showing a tubular contour with a faint hypoechoic central canal and adjacent more echogenic cervical stroma.\n<kw>maternal_cervix</kw>\n<kw>tubular_structure</kw>\n<kw>hypoechoic_lumen</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient01172_Plane2_1_of_1",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient01172_Plane2_1_of_1.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Fetal abdomen",
+  "dataset": "Fetal_Planes",
+  "cot": "Axial fetal abdominal ultrasound shows a rounded abdominal contour with an anechoic ovoid structure in the left upper quadrant and curvilinear echogenic bowel loops centrally.\n<kw>rounded_abdominal_contour</kw>\n<kw>anechoic_abdominal_structure</kw>\n<kw>echogenic_bowel_loops</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00779_Plane4_1_of_4",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00779_Plane4_1_of_4.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Maternal cervix",
+  "dataset": "Fetal_Planes",
+  "cot": "Longitudinal view of the cervix shows a tubular structure with a hypoechoic central canal and surrounding echogenic walls in midline orientation.\n<kw>tubular_structure</kw>\n<kw>hypoechoic_lumen</kw>\n<kw>echogenic_walls</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00788_Plane3_2_of_3",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00788_Plane3_2_of_3.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Fetal brain",
+  "dataset": "Fetal_Planes",
+  "cot": "Axial fetal head view demonstrating a central echogenic midline (falx) with symmetric cerebral hemispheric contours and similar bilateral parenchymal echotexture.\n<kw>midline_falx</kw>\n<kw>symmetric_hemispheres</kw>\n<kw>axial_view</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00816_Plane2_1_of_1",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00816_Plane2_1_of_1.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Fetal abdomen",
+  "dataset": "Fetal_Planes",
+  "cot": "Transverse ultrasound of the fetal abdomen shows a rounded abdominal contour with homogeneous soft tissue echotexture.\n<kw>rounded_abdominal_contour</kw>\n<kw>transverse_abdominal_view</kw>\n<kw>fetal_abdomen</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00766_Plane5_1_of_1",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00766_Plane5_1_of_1.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Fetal femur",
+  "dataset": "Fetal_Planes",
+  "cot": "Longitudinal ultrasound view of a fetal femur showing a single linear echogenic shaft with cortical margins and visible proximal and distal ends.\n<kw>linear_echogenic_structure</kw>\n<kw>fetal_femur</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00937_Plane5_2_of_2",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00937_Plane5_2_of_2.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Fetal femur",
+  "dataset": "Fetal_Planes",
+  "cot": "Linear echogenic osseous structure oriented horizontally across the field, with posterior acoustic shadowing.\n<kw>linear_echogenic_structure</kw>\n<kw>osseous_structure</kw>\n<kw>posterior_acoustic_shadow</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00970_Plane4_4_of_4",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00970_Plane4_4_of_4.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Maternal cervix",
+  "dataset": "Fetal_Planes",
+  "cot": "Sagittal transvaginal image shows a midline tubular cervix with a central hypoechoic canal and surrounding homogeneous echogenic stroma.\n<kw>cervix</kw>\n<kw>hypoechoic_lumen</kw>\n<kw>transvaginal</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00750_Plane3_1_of_3",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00750_Plane3_1_of_3.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Fetal brain",
+  "dataset": "Fetal_Planes",
+  "cot": "Axial fetal brain view shows asymmetric lateral ventricles with a markedly dilated left lateral ventricle; midline cavum septum pellucidum is visualized.\n<kw>fetal_brain</kw>\n<kw>asymmetric_lateral_ventricles</kw>\n<kw>dilated_left_lateral_ventricle</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/Fetal_Planes/images/Patient00948_Plane3_3_of_3",
+  "image": "fetalplanes__Dataset4EVLF__Fetal_Planes__images__Patient00948_Plane3_3_of_3.png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: other, maternal cervix, fetal abdomen, fetal brain, fetal femur, fetal thorax.",
+  "solution": "Fetal brain",
+  "dataset": "Fetal_Planes",
+  "cot": "Axial fetal head view showing a well-defined midline falx and symmetric cerebral hemispheres.\n<kw>fetal head</kw>\n<kw>midline_falx</kw>\n<kw>symmetric_hemispheres</kw>"
+ }
+]

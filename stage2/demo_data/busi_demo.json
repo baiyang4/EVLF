@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (100)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (100).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Superficial echogenic skin and subcutaneous fat overlie relatively homogeneous glandular echotexture; no discrete focal mass seen in this view.\n<kw>normal_echotexture</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (31)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (31).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Right breast ultrasound shows homogeneous fibroglandular echotexture with no discrete focal mass or fluid collection identified.\n<kw>right_breast</kw>\n<kw>normal_echotexture</kw>\n<kw>no_focal_mass</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (1)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (1).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Uniform fibroglandular and subcutaneous echotexture with visible skin line and linear echogenic Cooper's ligaments; no discrete hypoechoic or anechoic masses identified.\n<kw>homogeneous_echotexture</kw>\n<kw>no_focal_mass</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (130)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (130).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Skin line is thin and echogenic overlying heterogeneous fibroglandular and subcutaneous fat with linear echogenic stromal septations; no discrete cystic or solid focal lesions identified in the field of view.\n<kw>normal_echotexture</kw>\n<kw>intact_skin_line</kw>\n<kw>no_focal_lesion</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (106)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (106).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Breast ultrasound shows homogeneous echotexture of glandular and fatty layers with parallel fibrous septa; no discrete focal solid or cystic lesion seen within the imaged field.\n<kw>normal_echotexture</kw>\n<kw>no_focal_lesion</kw>\n<kw>parallel_fibrous_septa</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (75)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (75).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Homogeneous fibroglandular breast tissue with uniform echotexture, visible linear echogenic septa and subcutaneous fat; no discrete focal mass or anechoic cyst identified.\n<kw>normal_echotexture</kw>\n<kw>fibroglandular_tissue</kw>\n<kw>no_focal_mass</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (32)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (32).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Breast parenchyma demonstrates predominantly homogeneous, mildly heterogeneous echotexture with no discrete focal mass identified; skin line and subcutaneous tissue are intact and normal-appearing.\n<kw>normal_echotexture</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (124)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (124).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Skin line and subcutaneous fat are visible with homogeneous fibroglandular echotexture; no discrete solid or cystic focal lesion seen in the imaged field.\n<kw>normal_echotexture</kw>\n<kw>no_focal_lesion</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (104)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (104).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Breast ultrasound shows layered subcutaneous fat and fibroglandular tissue with predominantly homogeneous echotexture and mild heterogeneous areas; no discrete focal mass or anechoic cyst identified.\n<kw>mild_heterogeneity</kw>\n<kw>no_focal_mass</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/BUSI/normal/normal (114)",
+  "image": "busi__Dataset4EVLF__BUSI__normal__normal (114).png",
+  "problem": "Analyze the given ultrasound image for diagnosis. The possible diagnoses are: normal, benign tumor, malignant tumor.",
+  "solution": "Normal",
+  "dataset": "BUSI",
+  "cot": "Breast ultrasound shows homogeneous fibroglandular and subcutaneous fat layers with parallel echogenic stromal lines and no focal hypoechoic or cystic lesion identified.\n<kw>normal_echotexture</kw>\n<kw>no_focal_lesion</kw>"
+ }
+]

@@ -1,0 +1,26 @@
+# --- Data (not shipped: ~1.4 GB of training manifests) ---
+SFT/data/
+
+# --- Pretrained weights (symlinks to local storage; download separately) ---
+SFT/pretrained/InternVL3-8B
+SFT/pretrained/*.pth
+SFT/pretrained/*.bin
+SFT/pretrained/*.safetensors
+
+# --- Training / eval outputs ---
+SFT/work_dirs/
+stage2/output/*
+!stage2/output/.gitkeep
+wandb/
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+build/
+dist/
+
+# --- Misc ---
+.DS_Store

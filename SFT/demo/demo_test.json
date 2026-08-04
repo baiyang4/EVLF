@@ -1,0 +1,182 @@
+[
+ {
+  "question_id": 0,
+  "image": "xmlab1/source.jpg",
+  "text": "<image>\nWhat modality is used to take this image?",
+  "answer": "MRI"
+ },
+ {
+  "question_id": 1,
+  "image": "xmlab1/source.jpg",
+  "text": "<image>\nWhich part of the body does this image belong to?",
+  "answer": "Abdomen"
+ },
+ {
+  "question_id": 2,
+  "image": "xmlab1/source.jpg",
+  "text": "<image>\nWhat is the mr weighting in this image?",
+  "answer": "T2"
+ },
+ {
+  "question_id": 3,
+  "image": "xmlab1/source.jpg",
+  "text": "<image>\nDoes the picture contain liver?",
+  "answer": "Yes"
+ },
+ {
+  "question_id": 4,
+  "image": "xmlab1/source.jpg",
+  "text": "<image>\nDoes the picture contain kidney?",
+  "answer": "No"
+ },
+ {
+  "question_id": 5,
+  "image": "xmlab1/source.jpg",
+  "text": "<image>\nDoes the picture contain spleen?",
+  "answer": "No"
+ },
+ {
+  "question_id": 6,
+  "image": "xmlab1/source.jpg",
+  "text": "<image>\nWhere is the liver?",
+  "answer": "Right"
+ },
+ {
+  "question_id": 7,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nWhat modality is used to take this image?",
+  "answer": "CT"
+ },
+ {
+  "question_id": 8,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nWhich part of the body does this image belong to?",
+  "answer": "Chest"
+ },
+ {
+  "question_id": 9,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nWhat is the main organ in the image?",
+  "answer": "Liver, Heart, Spleen, Lung"
+ },
+ {
+  "question_id": 10,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nWhat is the largest organ in the picture?",
+  "answer": "Liver"
+ },
+ {
+  "question_id": 11,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nDoes the picture contain liver?",
+  "answer": "Yes"
+ },
+ {
+  "question_id": 12,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nDoes the picture contain lung?",
+  "answer": "Yes"
+ },
+ {
+  "question_id": 13,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nDoes the picture contain heart?",
+  "answer": "Yes"
+ },
+ {
+  "question_id": 14,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nIs the lung healthy?",
+  "answer": "Yes"
+ },
+ {
+  "question_id": 15,
+  "image": "xmlab100/source.jpg",
+  "text": "<image>\nWhich is the biggest in this image,lung,liver or heart?",
+  "answer": "Liver"
+ },
+ {
+  "question_id": 16,
+  "image": "xmlab101/source.jpg",
+  "text": "<image>\nWhat modality is used to take this image?",
+  "answer": "CT"
+ },
+ {
+  "question_id": 17,
+  "image": "xmlab101/source.jpg",
+  "text": "<image>\nWhich part of the body does this image belong to?",
+  "answer": "Chest"
+ },
+ {
+  "question_id": 18,
+  "image": "xmlab101/source.jpg",
+  "text": "<image>\nWhat is the main organ in the image?",
+  "answer": "Spinal Cord"
+ },
+ {
+  "question_id": 19,
+  "image": "xmlab101/source.jpg",
+  "text": "<image>\nDoes the picture contain liver?",
+  "answer": "No"
+ },
+ {
+  "question_id": 20,
+  "image": "xmlab101/source.jpg",
+  "text": "<image>\nDoes the picture contain lung?",
+  "answer": "No"
+ },
+ {
+  "question_id": 21,
+  "image": "xmlab101/source.jpg",
+  "text": "<image>\nDoes the picture contain heart?",
+  "answer": "No"
+ },
+ {
+  "question_id": 22,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nWhat modality is used to take this image?",
+  "answer": "CT"
+ },
+ {
+  "question_id": 23,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nWhich part of the body does this image belong to?",
+  "answer": "Chest"
+ },
+ {
+  "question_id": 24,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nWhat is the main organ in the image?",
+  "answer": "Lung"
+ },
+ {
+  "question_id": 25,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nWhat is the largest organ in the picture?",
+  "answer": "Lung"
+ },
+ {
+  "question_id": 26,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nDoes the picture contain liver?",
+  "answer": "No"
+ },
+ {
+  "question_id": 27,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nDoes the picture contain lung?",
+  "answer": "Yes"
+ },
+ {
+  "question_id": 28,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nDoes the picture contain heart?",
+  "answer": "No"
+ },
+ {
+  "question_id": 29,
+  "image": "xmlab104/source.jpg",
+  "text": "<image>\nWhat diseases are included in the picture?",
+  "answer": "Lung Cancer"
+ }
+]

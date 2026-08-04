@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/6524_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__6524_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Optic disc has a sharp margin with normal vessel caliber and no hemorrhages; macula appears clear with a faint peripapillary temporal pale spot adjacent to the disc.\n<kw>sharp_disc_margin</kw>\n<kw>clear_macula</kw>\n<kw>peripapillary_pale_spot</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/28597_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__28597_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Optic disc with sharp, well-defined margins and normal pink rim; macula appears intact with visible foveal reflex; retinal vessels are calibre-appropriate without visible hemorrhages or exudates.\n<kw>clear_macula</kw>\n<kw>sharp_disc_margin</kw>\n<kw>no_hemorrhages</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/1396_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__1396_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Optic disc with sharp margins and normal-caliber vessels; macula appears intact without hemorrhages or exudates.\n<kw>sharp_disc_margin</kw>\n<kw>normal_vessel_caliber</kw>\n<kw>no_hemorrhages</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/3064_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__3064_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Multiple small dot/blot retinal hemorrhages and a focal cotton-wool opacity temporal to the fovea.\n<kw>dot_blot_hemorrhages</kw>\n<kw>cotton_wool_spots</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/4793_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__4793_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Multiple scattered dot-and-blot retinal hemorrhages with clustered yellow hard exudates and several pale cotton-wool spots near the posterior pole.\n<kw>dot_blot_hemorrhages</kw>\n<kw>hard_exudates</kw>\n<kw>cotton_wool_spots</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/27901_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__27901_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Optic disc with sharp margins and normal vessel caliber; multiple small pale, round lesions centrally and adjacent to the macula, no visible hemorrhages.\n<kw>sharp_disc_margin</kw>\n<kw>pale_central_spots</kw>\n<kw>normal_vessel_caliber</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/1136_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__1136_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Optic disc well-circumscribed with sharp margins; macula with visible foveal reflex. No retinal hemorrhages or hard exudates.\n<kw>sharp_disc_margin</kw>\n<kw>visible_foveal_reflex</kw>\n<kw>no_hemorrhages</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/32755_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__32755_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Optic disc with sharp margins and normal color; macula clear with central foveal reflex; retinal vessels unremarkable, no hemorrhages or exudates.\n<kw>clear_macula</kw>\n<kw>sharp_disc_margin</kw>\n<kw>no_hemorrhages</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/16479_left",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__16479_left.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Fundus photograph with clear macula, sharp optic disc margins, normal retinal vessel caliber and no retinal hemorrhages.\n<kw>clear_macula</kw>\n<kw>sharp_disc_margin</kw>\n<kw>normal_vessel_caliber</kw>"
+ },
+ {
+  "question_id": "Dataset4EVLF/EYEPACS/train/38014_right",
+  "image": "eyepacs__Dataset4EVLF__EYEPACS__train__38014_right.jpeg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: non-referable dr, referable dr.",
+  "solution": "non-referable dr",
+  "dataset": "EYEPACS",
+  "cot": "Optic disc with sharp margins and normal color; macula appears intact without hemorrhages; retinal vessels of normal caliber.\n<kw>sharp_disc_margin</kw>\n<kw>clear_macula</kw>\n<kw>normal_vessel_caliber</kw>"
+ }
+]

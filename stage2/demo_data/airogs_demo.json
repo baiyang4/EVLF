@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-TRAIN-RG-2411",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-TRAIN-RG-2411.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc with a large central cup occupying most of the disc, rim thinning superiorly and inferiorly, and adjacent peripapillary atrophy.\n<kw>disc_cupping</kw>\n<kw>neuroretinal_rim_thinning</kw>\n<kw>peripapillary_atrophy</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-DEV-RG-1302",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-DEV-RG-1302.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc with prominent central cupping and increased cup-to-disc ratio, focal superior neuroretinal rim thinning, and mild peripapillary atrophy.\n<kw>enlarged_cup_disc_ratio</kw>\n<kw>neuroretinal_rim_thinning</kw>\n<kw>peripapillary_atrophy</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-DEV-NRG-1012",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-DEV-NRG-1012.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Non-Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc with normal cup-to-disc ratio and well-preserved neuroretinal rim without notching; central retinal vessels emerge normally and macula and surrounding retina appear unremarkable.\n<kw>normal_cup_disc_ratio</kw>\n<kw>intact_neuroretinal_rim</kw>\n<kw>macula_unremarkable</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-DEV-RG-742",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-DEV-RG-742.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc shows a large central cup with a thin neuroretinal rim and surrounding peripapillary atrophy.\n<kw>large_cup_disc_ratio</kw>\n<kw>neuroretinal_rim_thinning</kw>\n<kw>peripapillary_atrophy</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-DEV-RG-932",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-DEV-RG-932.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc with increased cup-to-disc ratio, thinning of the neuroretinal rim, and peripapillary atrophy.\n<kw>enlarged_cup_disc_ratio</kw>\n<kw>neuroretinal_rim_thinning</kw>\n<kw>peripapillary_atrophy</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-TRAIN-NRG-1211",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-TRAIN-NRG-1211.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Non-Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc is visible with mild central cupping and a preserved neuroretinal rim; macula shows a small, ill-defined pale spot and retinal vessels are within expected caliber.\n<kw>mild_central_cupping</kw>\n<kw>preserved_neuroretinal_rim</kw>\n<kw>macular_pale_spot</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-DEV-RG-1141",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-DEV-RG-1141.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc with a large cup-to-disc ratio, focal superior neuroretinal rim thinning, and visible peripapillary atrophy.\n<kw>enlarged_cup_disc_ratio</kw>\n<kw>neuroretinal_rim_thinning</kw>\n<kw>peripapillary_atrophy</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-DEV-RG-1223",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-DEV-RG-1223.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc shows a large cup-to-disc ratio with marked neuroretinal rim thinning and adjacent peripapillary atrophy.\n<kw>enlarged_cup_disc_ratio</kw>\n<kw>neuroretinal_rim_thinning</kw>\n<kw>peripapillary_atrophy</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-TRAIN-RG-826",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-TRAIN-RG-826.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc shows marked central cupping with an enlarged cup-to-disc ratio and focal thinning of the superior neuroretinal rim.\n<kw>disc_cupping</kw>\n<kw>enlarged_cup_disc_ratio</kw>\n<kw>neuroretinal_rim_thinning</kw>"
+ },
+ {
+  "question_id": "AIROGS-light-V2/images/EyePACS-TRAIN-RG-158",
+  "image": "airogs__AIROGS-light-V2__images__EyePACS-TRAIN-RG-158.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: Non-Referable Glaucoma, Referable Glaucoma.",
+  "solution": "Referable Glaucoma",
+  "dataset": "AIROGS",
+  "cot": "Optic disc with increased cup-to-disc ratio and neuroretinal rim thinning.\n<kw>disc_cupping</kw>\n<kw>neuroretinal_rim_thinning</kw>\n<kw>large_cup_disc_ratio</kw>"
+ }
+]

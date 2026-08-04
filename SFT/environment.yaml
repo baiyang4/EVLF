@@ -1,0 +1,38 @@
+name: internvl
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      # --- PyTorch (CUDA 12.1 build used in our experiments) -------------
+      - --index-url https://download.pytorch.org/whl/cu121
+      - torch==2.1.0
+      - torchvision==0.16.0
+      # --- Core training stack -------------------------------------------
+      - --index-url https://pypi.org/simple
+      - transformers==4.37.2
+      - deepspeed==0.15.4
+      - peft==0.10.0
+      - timm==0.9.12
+      - accelerate
+      - sentencepiece
+      - tokenizers
+      - einops
+      - protobuf
+      # --- Data / image utilities ----------------------------------------
+      - albumentations==2.0.7
+      - opencv-python
+      - imageio
+      - decord
+      - orjson
+      - pillow
+      - numpy
+      - scipy
+      - pyyaml
+      - tqdm
+      # --- Required by MedImageInsight (DaViT-Huge) backbone -------------
+      - mup

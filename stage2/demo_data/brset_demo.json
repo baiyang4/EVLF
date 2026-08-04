@@ -1,0 +1,82 @@
+[
+ {
+  "question_id": "BRSET/images/img10207",
+  "image": "brset__BRSET__images__img10207.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "Moderate Diabetic Retinopathy, Macular Edema, Increased Cup Disc",
+  "dataset": "BRSET",
+  "cot": "Optic disc with enlarged cup-to-disc ratio; multiple yellow hard exudates and scattered dot-blot hemorrhages in the posterior pole; central macular thickening.\n<kw>increased_cup_disc</kw>\n<kw>hard_exudates</kw>\n<kw>macular_thickening</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img13114",
+  "image": "brset__BRSET__images__img13114.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "No Diabetic Retinopathy, AMD",
+  "dataset": "BRSET",
+  "cot": "Central macular area contains confluent yellow-white drusenoid material with surrounding pigmentary disturbance and central geographic atrophy; retinal vessels appear normal in caliber.\n<kw>drusen_deposits</kw>\n<kw>pigmentary_changes</kw>\n<kw>geographic_atrophy</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img05272",
+  "image": "brset__BRSET__images__img05272.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "No Diabetic Retinopathy, AMD, Drusens",
+  "dataset": "BRSET",
+  "cot": "Optic disc well defined with sharp margins and normal-caliber vessels; macula contains multiple small yellow-white drusen with central pigmentary change; no retinal hemorrhages visible.\n<kw>drusen_deposits</kw>\n<kw>sharp_disc_margin</kw>\n<kw>normal_vessel_caliber</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img04487",
+  "image": "brset__BRSET__images__img04487.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "No Diabetic Retinopathy, Hemorrhage",
+  "dataset": "BRSET",
+  "cot": "Optic disc with sharp margins and normal vessel caliber; macula appears clear with no retinal hemorrhages or exudates evident.\n<kw>normal_vessel_caliber</kw>\n<kw>clear_macula</kw>\n<kw>sharp_disc_margin</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img12998",
+  "image": "brset__BRSET__images__img12998.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "No Diabetic Retinopathy",
+  "dataset": "BRSET",
+  "cot": "Optic disc with sharp margins and normal color; retinal vessels of normal caliber; macula clear without visible hemorrhages or exudates.\n<kw>sharp_disc_margin</kw>\n<kw>normal_vessel_caliber</kw>\n<kw>clear_macula</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img00697",
+  "image": "brset__BRSET__images__img00697.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "No Diabetic Retinopathy, Hypertensive Retinopathy, Hemorrhage, Increased Cup Disc",
+  "dataset": "BRSET",
+  "cot": "Optic disc with sharp margins and normal color; retinal vessels of normal caliber; macula clear with no visible hemorrhages or exudates.\n<kw>sharp_disc_margin</kw>\n<kw>normal_vessel_caliber</kw>\n<kw>clear_macula</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img02703",
+  "image": "brset__BRSET__images__img02703.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "No Diabetic Retinopathy, Myopic Fundus",
+  "dataset": "BRSET",
+  "cot": "Optic disc with sharp margins and peripapillary atrophy; macula appears clear without hemorrhages or exudates.\n<kw>sharp_disc_margin</kw>\n<kw>clear_macula</kw>\n<kw>myopic_fundus</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img12880",
+  "image": "brset__BRSET__images__img12880.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "No Diabetic Retinopathy, Nevus",
+  "dataset": "BRSET",
+  "cot": "Sharp optic disc and normal-caliber vessels; clear macula; two well-defined pigmented flat lesions inferior-temporally in the mid-periphery without hemorrhages.\n<kw>pigmented_lesion</kw>\n<kw>sharp_disc</kw>\n<kw>clear_macula</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img15783",
+  "image": "brset__BRSET__images__img15783.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "Moderate Diabetic Retinopathy, Macular Edema",
+  "dataset": "BRSET",
+  "cot": "Scattered dot-and-blot retinal hemorrhages and clustered hard exudates are visible in the posterior pole, concentrated temporal to the optic disc and near the macular region.\n<kw>hemorrhages</kw>\n<kw>hard_exudates</kw>"
+ },
+ {
+  "question_id": "BRSET/images/img02624",
+  "image": "brset__BRSET__images__img02624.jpg",
+  "problem": "Analyze the given fundus image for diagnosis. The possible diagnoses are: No Diabetic Retinopathy, Mild Diabetic Retinopathy, Moderate Diabetic Retinopathy, Severe Diabetic Retinopathy, Proliferative Diabetic Retinopathy, Macular Edema, Hypertensive Retinopathy, Vascular Occlusion, Retinal Detachment, Myopic Fundus, Hemorrhage, Scar, Drusens, Nevus, Increased Cup Disc, AMD.",
+  "solution": "Mild Diabetic Retinopathy, Hypertensive Retinopathy",
+  "dataset": "BRSET",
+  "cot": "Retinal vessels show mild generalized arteriolar narrowing and tortuosity with faint focal vessel attenuation near the disc; macula appears clear without visible hemorrhages, exudates, or neovascularization.\n<kw>mild_vessel_changes</kw>\n<kw>arteriolar_narrowing</kw>"
+ }
+]

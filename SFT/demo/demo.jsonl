@@ -1,0 +1,100 @@
+{"id": 0, "image": "xmlab1/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "MRI"}], "answer_type": "OPEN"}
+{"id": 1, "image": "xmlab1/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Abdomen"}], "answer_type": "OPEN"}
+{"id": 2, "image": "xmlab1/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the mr weighting in this image?"}, {"from": "gpt", "value": "T2"}], "answer_type": "OPEN"}
+{"id": 3, "image": "xmlab1/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 4, "image": "xmlab1/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain kidney?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 5, "image": "xmlab1/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain spleen?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 6, "image": "xmlab1/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhere is the liver?"}, {"from": "gpt", "value": "Right"}], "answer_type": "OPEN"}
+{"id": 7, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 8, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 9, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Liver, Heart, Spleen, Lung"}], "answer_type": "OPEN"}
+{"id": 10, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Liver"}], "answer_type": "OPEN"}
+{"id": 11, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 12, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 13, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 14, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nIs the lung healthy?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 15, "image": "xmlab100/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich is the biggest in this image,lung,liver or heart?"}, {"from": "gpt", "value": "Liver"}], "answer_type": "CLOSED"}
+{"id": 16, "image": "xmlab101/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 17, "image": "xmlab101/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 18, "image": "xmlab101/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Spinal Cord"}], "answer_type": "OPEN"}
+{"id": 19, "image": "xmlab101/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 20, "image": "xmlab101/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 21, "image": "xmlab101/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 22, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 23, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 24, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 25, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 26, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 27, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 28, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 29, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat diseases are included in the picture?"}, {"from": "gpt", "value": "Lung Cancer"}], "answer_type": "OPEN"}
+{"id": 30, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the lung look abnormal?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 31, "image": "xmlab104/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhere is/are the abnormality located?"}, {"from": "gpt", "value": "Right Lung, Left"}], "answer_type": "OPEN"}
+{"id": 32, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 33, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 34, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Lung, Heart"}], "answer_type": "OPEN"}
+{"id": 35, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 36, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 37, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 38, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 39, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat diseases are included in the picture?"}, {"from": "gpt", "value": "None"}], "answer_type": "OPEN"}
+{"id": 40, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nIs the lung healthy?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 41, "image": "xmlab107/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich is the bigger in this image,lung or heart?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "CLOSED"}
+{"id": 42, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 43, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 44, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Lung, Heart"}], "answer_type": "OPEN"}
+{"id": 45, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 46, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 47, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 48, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 49, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat diseases are included in the picture?"}, {"from": "gpt", "value": "Lung Cancer"}], "answer_type": "OPEN"}
+{"id": 50, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the lung look normal?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 51, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhere is/are the abnormality located?"}, {"from": "gpt", "value": "Left Lung, Right"}], "answer_type": "OPEN"}
+{"id": 52, "image": "xmlab108/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich is the bigger in this image, lung or heart?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "CLOSED"}
+{"id": 53, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 54, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 55, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Lung, Heart"}], "answer_type": "OPEN"}
+{"id": 56, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 57, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 58, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 59, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 60, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat diseases are included in the picture?"}, {"from": "gpt", "value": "Lung Cancer"}], "answer_type": "OPEN"}
+{"id": 61, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhere is/are the abnormality located?"}, {"from": "gpt", "value": "Left Lung, Lower Right"}], "answer_type": "OPEN"}
+{"id": 62, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the lung look normal?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 63, "image": "xmlab109/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich is the bigger in this image, lung or heart?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "CLOSED"}
+{"id": 64, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "MRI"}], "answer_type": "OPEN"}
+{"id": 65, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Abdomen"}], "answer_type": "OPEN"}
+{"id": 66, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the mr weighting in this image?"}, {"from": "gpt", "value": "T2"}], "answer_type": "OPEN"}
+{"id": 67, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes spleen look abnormal?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 68, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 69, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain kidney?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 70, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain spleen?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 71, "image": "xmlab11/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhere is the spleen?"}, {"from": "gpt", "value": "Lower right"}], "answer_type": "OPEN"}
+{"id": 72, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 73, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 74, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Lung, Heart"}], "answer_type": "OPEN"}
+{"id": 75, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 76, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 77, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 78, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 79, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat diseases are included in the picture?"}, {"from": "gpt", "value": "Lung Cancer"}], "answer_type": "OPEN"}
+{"id": 80, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nIs the lung healthy?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 81, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhere is/are the abnormality located?"}, {"from": "gpt", "value": "Left Lung, Lower Right"}], "answer_type": "OPEN"}
+{"id": 82, "image": "xmlab110/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich is the biggest in this image,lung,liver or heart?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "CLOSED"}
+{"id": 83, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 84, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 85, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Lung, Liver"}], "answer_type": "OPEN"}
+{"id": 86, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Liver"}], "answer_type": "OPEN"}
+{"id": 87, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 88, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 89, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain heart?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 90, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nIs the lung healthy?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 91, "image": "xmlab111/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich is the biggest in this image,lung,liver or heart?"}, {"from": "gpt", "value": "Liver"}], "answer_type": "CLOSED"}
+{"id": 92, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat modality is used to take this image?"}, {"from": "gpt", "value": "CT"}], "answer_type": "OPEN"}
+{"id": 93, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhich part of the body does this image belong to?"}, {"from": "gpt", "value": "Chest"}], "answer_type": "OPEN"}
+{"id": 94, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the main organ in the image?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 95, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat is the largest organ in the picture?"}, {"from": "gpt", "value": "Lung"}], "answer_type": "OPEN"}
+{"id": 96, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain liver?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
+{"id": 97, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the picture contain lung?"}, {"from": "gpt", "value": "Yes"}], "answer_type": "CLOSED"}
+{"id": 98, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nWhat diseases are included in the picture?"}, {"from": "gpt", "value": "Lung Cancer"}], "answer_type": "OPEN"}
+{"id": 99, "image": "xmlab113/source.jpg", "conversations": [{"from": "human", "value": "<image>\nDoes the lung look normal?"}, {"from": "gpt", "value": "No"}], "answer_type": "CLOSED"}
