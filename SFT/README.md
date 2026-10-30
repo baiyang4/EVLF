@@ -74,8 +74,7 @@ Verified against Python 3.9 + CUDA 12.1:
 conda env create -f environment.yaml
 conda activate internvl
 
-# flash-attn must be built AFTER torch is installed, so it is kept out of the
-# YAML. This step takes ~10 min the first time (compiles against CUDA).
+# flash-attn must be built after torch is installed, so it is kept out of the YAML.
 pip install flash-attn==2.4.0.post1 --no-build-isolation
 ```
 
@@ -91,7 +90,7 @@ pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorc
 # Core training stack
 pip install transformers==4.37.2 deepspeed==0.15.4 peft==0.10.0 timm==0.9.12
 
-# Flash-Attention 2 (requires a matching CUDA/torch build — ~10 min to compile)
+# Flash-Attention 2 (requires a matching CUDA/torch build)
 pip install flash-attn==2.4.0.post1 --no-build-isolation
 
 # Data / image utilities
@@ -150,10 +149,6 @@ ln -sfn /path/to/sam-med2d_b.pth    pretrained/sam-med2d_b.pth
 ln -sfn /path/to/medimageinsigt.pth pretrained/medimageinsigt.pth
 ```
 
-> `medmnist_tsm.bin` (the auxiliary MedMNIST ViT head) is **not** used by this
-> configuration — the released model runs with `--use_tsm2 False`, so it does not
-> need to be downloaded.
-
 Sources:
 [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B) ·
 [SAM-Med2D](https://github.com/OpenGVLab/SAM-Med2D) ·
@@ -202,8 +197,7 @@ CUDA_VISIBLE_DEVICES=5,6 GPUS=2 PER_DEVICE_BATCH_SIZE=1 GRADIENT_ACC=1 \
 
 The demo reuses the same trainer, model code and data pipeline as the full run
 (including `--use_tsm2 False --use_aux_lora 64`) — only the meta path, batch
-size and `max_steps` are reduced so it finishes in ~15 s on 2× H200. A
-checkpoint is written to `work_dirs/demo_evlf/`.
+size and `max_steps` are reduced. A checkpoint is written to `work_dirs/demo_evlf/`.
 
 ## Testing / Evaluation
 

@@ -16,7 +16,7 @@ stage2/
 │   │   ├── grpo_train.py              # training entry point
 │   │   ├── trainer/                   # GRPO trainer (BYVLMGRPOTrainer) + config
 │   │   ├── vlm_modules/               # InternVL module + base
-│   │   └── rewards/                   # think_reward, thinking_reward, deberta client/service
+│   │   └── rewards/                   # think_reward, deberta client/service
 │   └── think_align/                         # vendored ThinkAlign package (OT + NLI gate)
 ├── run_scripts/
 │   ├── run_full_grpo.sh               # full 8-GPU training (ThinkAlign, GRPO config)
@@ -26,7 +26,6 @@ stage2/
 │   └── demo.yaml                # demo config
 ├── demo_data/                         # 100 classification demo samples + images
 ├── deepspeed_configs/zero_stage2_config.json
-├── docs/                              # method + implementation notes
 ├── environment.yml / requirements.txt
 └── output/
 ```
@@ -82,7 +81,4 @@ bash run_scripts/run_full_grpo.sh
 
 - **accuracy** — IoU for grounding; answer-overlap F1 for classification / VQA.
 - **think_align** — clinical reasoning-alignment reward (token-level OT + contradiction gate +
-  contrastive baseline), weight `alpha = 0.25`. See [docs/think_reward_method.md](docs/think_reward_method.md).
-
-Training hyperparameters and the KL schedule are documented in
-[docs/training_implementation_details.md](docs/training_implementation_details.md).
+  contrastive baseline), weight `alpha = 0.25`.

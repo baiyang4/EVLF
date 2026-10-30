@@ -1,6 +1,3 @@
-# kw-tagged GRPO set -- see build_kw_dataset.py.
-# = think_align_v2_full.yaml verbatim, with cls_vindr_cls / cls_nih_cls replaced by
-# the kw balanced builds. Pairs with SFT init ..._papilafix_merged (kw).
 # Point THINK_REF_POOL at training_data so distractors match.
 datasets:
   - json_path: /path/to/training_data/biomedparse.json

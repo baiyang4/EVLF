@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Demo training: fine-tunes EVLF on 100 demo samples for a few steps, using the
-# SAME model code / trainer / data pipeline as the full run — only the meta path,
-# batch size and max_steps are reduced so it finishes in ~15 s on 2x H200.
+# same model code, trainer, and data pipeline as the full run. The meta path,
+# batch size, and max_steps are adjusted for the demo.
 #
 # Usage:  bash demo/run_demo.sh
 #   multi-GPU:  CUDA_VISIBLE_DEVICES=5,6 GPUS=2 bash demo/run_demo.sh

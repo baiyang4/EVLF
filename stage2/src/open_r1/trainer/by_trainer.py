@@ -997,20 +997,6 @@ class BYVLMGRPOTrainer(Trainer):
 
         # Answer leakage into <think>: fraction of the solution's words that the model
         # also wrote inside its reasoning block.
-        #
-        # The alternative was to mask the solution out of both sides before scoring the
-        # alignment reward. That was tested and rejected: the correct-vs-wrong gap barely
-        # moves under masking (+0.168 -> +0.163), so the reward is not living off the leak
-        # and there is nothing to correct -- while masking costs ~3% of the signal and
-        # corrupts the encoder context of the whole sentence, and naming the organ you
-        # just described is correct clinical prose rather than cheating.
-        #
-        # What masking would have pre-empted is reward hacking: the policy learning to
-        # blurt the answer inside <think> to farm the alignment term. That is cheap to
-        # watch instead of prevent. Measured baselines: 0.161 on cls, and in the reference
-        # rationales themselves 0.0-0.03 for most cls sets (organ*mnist 0.18-0.21 and
-        # Fetal_Planes 0.32 are structural -- their class names *are* the organ names).
-        # A climb well past those means the term is being gamed; drop the weight then.
         leak = []
         for comp, example in zip(completions, inputs):
             sol_words = {
@@ -1025,26 +1011,16 @@ class BYVLMGRPOTrainer(Trainer):
                 continue
             think_words = {w for w in re.findall(r"[A-Za-z]+", think.group(1).lower()) if len(w) >= 3}
             leak.append(len(sol_words & think_words) / len(sol_words))
-        # gather() is a collective and MUST run on every rank on every step. Guarding it
-        # with `if leak:` deadlocked the run at step 26: a rank whose micro-batch is all
-        # grounding has no A-Za-z in its solutions (they are bbox *lists*), and SLAKE's
-        # Chinese answers are empty for the same reason, so that rank skipped the gather
-        # while the other seven blocked in it forever. Send sum and count instead, so the
-        # empty case is a zero contribution rather than a missing participant -- and the
-        # post-gather branch is on a value that is identical across ranks.
+        # Every rank must participate in gather(), including ranks with no usable
+        # solutions. Gather sum and count so empty ranks contribute zeros.
         local_leak = torch.tensor([sum(leak), len(leak)], dtype=torch.float32, device=device)
         totals = self.accelerator.gather(local_leak.unsqueeze(0)).sum(dim=0)
         if totals[1] > 0:
             self._metrics["diag/answer_words_in_think"].append((totals[0] / totals[1]).item())
 
-        # Non-English reasoning. think_reward is English-only (its encoder and the
-        # contradiction gate both are) and scores an unencodable <think> as 0.0 -- which
-        # inside a group is not abstention but a penalty, since advantages are z-scored
-        # against siblings that did get a score. Measured at the start: 15/2016 rollouts
-        # (0.74%), and the policy already prefers English reasoning on Chinese prompts
-        # (29 of 40), so this only reinforces its existing majority behaviour. Small
-        # enough to accept, big enough to watch: if this climbs the term is actively
-        # training the language out, which is a side effect nobody asked for.
+        # Track CJK output because the reasoning reward uses English models and
+        # assigns zero to unsupported text. Group normalization can penalize such
+        # completions relative to others that receive a score.
         cjk = sum(
             1 for comp in completions
             if re.search(

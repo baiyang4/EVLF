@@ -1,54 +1,19 @@
-"""ThinkAlign reasoning reward (clinical reasoning alignment).
+"""ThinkAlign clinical reasoning-alignment reward for GRPO.
 
-The outer framework
-is unchanged -- split both sides into sentences, build completeness/faithfulness
-matrices, take the harmonic mean -- only the sentence-pair scorer differs:
-
-    directional semi-relaxed token OT  x  bidirectional contradiction gate
-
-Why, measured on 315 reconstructed 8-rollout groups (2520 real cls rollouts):
-
-                        median   within-group std   correct-vs-wrong gap
-    NLI sentence-F1      0.071        0.099               +0.042
-    ThinkAlign                0.740        0.206               +0.168
-
-Within-group std is the only thing GRPO can use (advantages are z-scored inside
-each group), and it doubles. The gap quadrupling means the term pulls the same
-way as accuracy, so it is a dense supplement rather than a competing objective --
-39.7% of groups are accuracy-degenerate (all G rollouts equally right or wrong)
-and contribute zero gradient without it.
-
-Config deltas from the ThinkAlign repo defaults, both measured rather than guessed:
-  * marginal_relaxation 1.0 -> 0.05. At 1.0, rho = lam/(lam+eps) = 0.952, i.e. the
-    "relaxed" marginal is 95% hard and the two directions solve nearly the same
-    problem. 0.05 gives identical quality 44% faster.
-  * contradiction_gamma 1.0 -> 2.0. Ceiling is untouched (0.896 -> 0.895) while the
-    floor drops (other-reference 0.316 -> 0.238); gap and within-group std each
-    gain 14%. gamma=3.0 gains a further ~3% but extrapolates further on an NLI
-    model already known to be out of domain, so 2.0 is the stopping point.
-  * No corpus IDF. Built from all 184,258 reference rationales it changed every
-    measured number in the third decimal (gap +0.1679 -> +0.1677): OT masses are
-    normalised per sentence, and a ~20-word clinical sentence is already almost
-    all content words.
-
-Deliberately NOT done: masking the answer string out of both sides. That was
-tested as a diagnostic, not adopted as a fix -- the gap survives masking
-(+0.168 -> +0.163), which is evidence the signal does not come from answer
-leakage, so there is nothing to correct. Naming the organ you just described is
-correct clinical prose, and masking corrupts the encoder context of the whole
-sentence. The leak is monitored instead (see the answer-coverage diag in
-by_trainer) so reward hacking would be visible if it ever started.
+Sentence pairs use directional semi-relaxed token OT and a bidirectional
+contradiction gate. Completeness and faithfulness are combined with a harmonic
+mean, with same-dataset distractors providing a contrastive baseline.
 
 Environment:
-    DEBERTA_SERVICE_URL   NLI service (contradiction head only). Default
-                          http://127.0.0.1:8001, normally an ssh -L tunnel to the
-                          l40 box so the endpoint is never network-exposed.
-    THINK_REWARD_WEIGHT   output scaling, default 0.5 (~13% of within-group variance)
+    DEBERTA_SERVICE_URLS  comma-separated NLI service replicas, sharded by rank
+    DEBERTA_SERVICE_URL   fallback NLI endpoint, default http://127.0.0.1:8001
+    THINK_REWARD_WEIGHT   output scaling, default 0.5
     THINK_ENCODER         frozen biomedical token encoder
-    THINK_REF_POOL        dir of training .json files, read for the contrastive baseline's
-                          distractor references. Unset -> plain ThinkAlign, which is known to be
-                          hackable by a per-modality template; see think_reward's docstring.
-    THINK_NUM_DISTRACTORS K, default 4. Costs K+1 OT solves per rollout instead of 1.
+    THINK_LAMBDA          OT marginal relaxation, default 0.05
+    THINK_GAMMA           contradiction-gate exponent, default 2.0
+    THINK_REF_POOL        training JSON directory for distractor references;
+                          unset disables the contrastive baseline
+    THINK_NUM_DISTRACTORS maximum distractors per reference, default 4
 """
 
 import hashlib
@@ -129,23 +94,8 @@ class PrefetchedContradictionScorer(BaseContradictionScorer):
 def get_client() -> DebertaClient:
     """One client per rank, sharded across service replicas by LOCAL_RANK.
 
-    A single replica is the dominant cost of the contrastive reward, not the OT solve.
-    Measured 2026-07-22: one L40S serves 240 pairs/s and fully serializes concurrent
-    callers (8 simultaneous requests take 8.5x one request), while the GPU sits at
-    95-98% utilisation -- so it is compute-bound and neither a larger DEBERTA_BATCH nor
-    a bigger service-side batch helps. K=4 distractors multiply the payload 5.13x
-    (deduped pairs: median 60 for plain ThinkAlign, 308 for contrastive), and all of it
-    queues behind the other seven ranks. That is where v2's 38.38 s/it came from
-    against accuracy-only's 20.40.
-
-    One step (8 ranks x 2 calls x 308 pairs), measured end to end:
-        1 replica    22.2 s  -> 39.3 s/it   (matches v2's observed 38.38)
-        3 replicas    7.9 s  -> 25.0 s/it
-
-    DEBERTA_SERVICE_URLS is a comma-separated list; rank r uses entry r % len. Replicas
-    must be roughly equal in speed -- static sharding is limited by the SLOWEST one, so
-    a 3x fast set beat a 4x set containing one card that ran at 60% speed (7.9 s vs
-    8.8 s). Falls back to the single DEBERTA_SERVICE_URL when the list is unset.
+    Rank r uses entry r % len(DEBERTA_SERVICE_URLS). If the replica list is
+    unset, use DEBERTA_SERVICE_URL. Service health is checked on initialization.
     """
     global _client
     urls = [u.strip() for u in os.getenv("DEBERTA_SERVICE_URLS", "").split(",") if u.strip()]
@@ -211,27 +161,14 @@ def _split(text: str) -> List[str]:
 
 
 def _encodable(text: str) -> bool:
-    """True if every sentence ThinkAlign will split out has at least one encodable word.
+    """Require ASCII alphabetic content in every sentence used by ThinkAlign.
 
-    ThinkAlign's word regex is `[A-Za-z]+ | digits | [^\\w\\s]`, and CJK matches none of the
-    three (Chinese characters are `\\w`, so they are not punctuation either), so a Chinese
-    sentence pretokenizes to zero words and FrozenHFTokenEncoder raises "Cannot encode an
-    empty sentence" -- which killed a probe at step 7. SLAKE is ~49% Chinese questions and
-    the policy answers in kind, so this is routine, not an edge case.
-
-    Checking here rather than filtering sentences is deliberate: ThinkAlignSentenceAligner
-    re-splits internally, so a filtered list would not survive the round trip. A sample
-    that fails simply scores 0.0, the same as one with no <think> block -- the reward is
-    English-only by construction and abstains instead of guessing.
+    Validation uses the aligner's sentence splitter. Samples with unsupported
+    or punctuation-only sentences receive zero reward without calling the encoder.
     """
     sentences = _split(text)
     return bool(sentences) and all(
-        # Not merely "pretokenize returned something": its `[^\w\s]` branch matches CJK
-        # punctuation, so 图像中肝脏位于右上腹。 tokenizes to ['。'] -- non-empty, so it
-        # does not crash, but IDF gives punctuation zero mass, the encoder falls back to
-        # uniform weights over punctuation embeddings, and the pair scores a meaningless
-        # 0.325. That is worse than abstaining: it injects noise straight into the
-        # within-group variance that GRPO turns into gradient. Require real word content.
+        # Punctuation may tokenize but does not provide usable word content.
         any(_WORDLIKE.search(word) for word in pretokenize(sentence))
         for sentence in sentences
     )
@@ -240,10 +177,8 @@ def _encodable(text: str) -> bool:
 def get_ref_pool() -> Dict[str, List[str]]:
     """Reference rationales grouped by source dataset, for the contrastive baseline.
 
-    Loaded from THINK_REF_POOL (the training_data dir), not from the batch: a batch holds
-    only 4 distinct references and they are drawn across the whole task mix, so in-batch
-    distractors would be mostly cross-modality -- measured to leave 58% of the template's
-    advantage standing, where same-dataset distractors flip it negative.
+    Load training JSON files from THINK_REF_POOL so distractors can be sampled
+    from the same dataset as each reference.
     """
     global _ref_pool
     if _ref_pool is None:
@@ -317,26 +252,13 @@ def _distractors(dataset: Optional[str], own: str, k: int) -> List[str]:
 def think_reward(completions, cot_gpt=None, cot_gemini=None, **kwargs) -> List[float]:
     """Contrastive sentence-alignment reward over the <think> block. One value per completion.
 
-        reward = ThinkAlign(think, own_ref) - mean_k ThinkAlign(think, other_ref_k)
+        baseline = mean_k ThinkAlign(think, other_ref_k)
+        reward = weight * (ThinkAlign(think, own_ref) - baseline)
 
-    The subtraction is the whole point. Plain ThinkAlign is a bag-of-content-words alignment, so
-    against a diverse-but-lexically-homogeneous reference distribution its expected-reward
-    maximiser is the modality's *modal* sentence -- one generic line naming optic disc /
-    margins / vessels / macula scores well against any fundus reference, while a genuinely
-    image-specific line only wins when the reference happens to mention the same finding.
-    Measured on the first run's checkpoint: emitting the modal template beat emitting a real
-    image-specific description by +0.128 (fundus) / +0.138 (chest), which is 76% of the
-    +0.168 correct-vs-wrong gap ThinkAlign was adopted for, and available unconditionally. The
-    policy duly collapsed -- 56% of seed_DR_referable and 52% of MESSIDOR2 <think> blocks
-    were one byte-identical sentence, and the chest-X-ray template was emitted verbatim on
-    CT images -- costing -15.9 pt on AMi-Br and -9.6 pt on 5-class DR grading, while binary
-    tasks on the same images were untouched (-0.4 pt on DR-referable).
-
-    A generic sentence scores the same against its own reference as against any other, so
-    the difference nets to ~0; a specific one keeps its margin. Measured with same-dataset
-    distractors, K=4: template +0.653 -> -0.032, oracle 0.881 -> 0.373, and the spread that
-    GRPO actually consumes is unchanged (0.371 -> 0.366), i.e. the hack is removed without
-    taking the signal with it.
+    References use cot_gpt with cot_gemini as a fallback. Same-dataset
+    distractors reduce the reward for generic reasoning shared across images.
+    The baseline is zero when no distractors are available. Missing or
+    unsupported reasoning receives zero reward; valid rewards may be negative.
     """
     weight = float(os.getenv("THINK_REWARD_WEIGHT", "0.5"))
     num_distractors = int(os.getenv("THINK_NUM_DISTRACTORS", "4"))
