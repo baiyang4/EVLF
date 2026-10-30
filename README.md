@@ -1,8 +1,53 @@
 # EVLF-FM
 
-Training and evaluation code for **EVLF-FM**, an InternVL3-8B–based medical multimodal
-model with two auxiliary medical encoders (MedImageInsight disease encoder + MedSAM
-pixel-level encoder). The pipeline has three steps:
+[Paper](https://www.nature.com/articles/s41591-026-04655-5) ·
+[Model weights](https://huggingface.co/yangbai123/EVLF-FM)
+
+Official training and evaluation code for **EVLF-FM (Explainable Vision Language
+Foundation Model for Medicine)**, a medical multimodal model for disease diagnosis,
+visual question answering, and medical visual grounding.
+
+**[A clinical multimodal vision language foundation model with fine-grain explainability](https://www.nature.com/articles/s41591-026-04655-5)**
+
+Yang Bai, Haoran Cheng, Yang Zhou, et al. · *Nature Medicine*, 2026.
+
+## Released model
+
+The model weights are publicly available at
+[yangbai123/EVLF-FM](https://huggingface.co/yangbai123/EVLF-FM).
+This released version is trained on publicly available datasets. The download includes
+BF16 weights in Safetensors format, the tokenizer, model code, and an `inference.py`
+entry point.
+
+After setting up the [SFT/testing environment](#environments), run the following from
+the repository root to download the checkpoint and its inference dependencies:
+
+```bash
+conda activate internvl
+pip install huggingface-hub==0.34.4
+hf download yangbai123/EVLF-FM --local-dir SFT/work_dirs/EVLF-FM
+pip install -r SFT/work_dirs/EVLF-FM/requirements.txt
+```
+
+Run inference on an image using a CUDA GPU with BF16 support:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python SFT/work_dirs/EVLF-FM/inference.py \
+    --image /path/to/image.jpg \
+    --question "What modality is used to take this image?" \
+    --task vqa
+```
+
+Supported tasks are `vqa`, `cls`, `grounding`, and `raw`. Add `--thinking` for VQA
+reasoning output, or `--no-flash-attn` to run without FlashAttention. See the
+[model card](https://huggingface.co/yangbai123/EVLF-FM#usage) for Python and batch
+inference examples, and the
+[evaluation results](https://huggingface.co/yangbai123/EVLF-FM/blob/main/evaluation/results.txt)
+for the released checkpoint's benchmark scores.
+
+## Training and evaluation pipeline
+
+The pipeline has three steps:
 
 ```
   Stage 1 (SFT)                 Stage 2 (GRPO)                  Testing
@@ -126,17 +171,30 @@ Quick demo test (30-sample SLAKE VQA, lenient accuracy):
 CKPT=/path/to/merged_model bash demo/run_test_demo.sh
 ```
 
----
+## Citation
 
-## Notes
+If you use EVLF-FM in your research, please cite our paper:
 
-- Checkpoints must be **merged** (LoRA folded in) before evaluation — a raw training output
-  still carries adapters. Use `SFT/tools/merge_lora_sam.py`.
-- **Not in this repo** (see `.gitignore`): the training manifests under `SFT/data/` (~1.4 GB of
-  `.jsonl`) and the base/auxiliary weights under `SFT/pretrained/` (`InternVL3-8B`,
-  `medimageinsigt.pth`, `medmnist_tsm.bin`, `sam-med2d_b.pth`). Obtain them separately and
-  place them at those paths — the demo data under `SFT/demo/` and `stage2/demo_data/` *is*
-  included, so the demos run out of the box once the weights are in place.
-- No API keys are shipped; `WANDB_API_KEY` comes from `~/.netrc` or `wandb login`.
-- The DeBERTa NLI service for Stage 2 must be bound to `127.0.0.1` and reached over an ssh
-  tunnel — never exposed on the network.
+```bibtex
+@article{bai2026evlffm,
+  title   = {A clinical multimodal vision language foundation model with fine-grain explainability},
+  author  = {Bai, Yang and Cheng, Haoran and Zhou, Yang and Zhou, Jun and
+             Thirunavukarasu, Arun and Ke, Yuhe and Yao, Jie and Fukutsu, Kanae and
+             Quek, Chrystie Wan Ning and Hong, Ashley Shuen Ying and
+             Gutierrez, Laura and Berni, Alessandro and Teo, Zhen Ling and
+             Ting, Darren Shu Jeng and Soetikno, Brian T. and Nielsen, Christopher S. and
+             Elze, Tobias and Li, Zengxiang and Sharma, Sumit and Ruthmann, Nicholas and
+             Linh, Le Dinh and Chan, Hiok Hong and Koh, Victor and Tan, Marcus and
+             Li, Kelvin Z. and Yip, Leonard and Cheng, Ching Yu and Tham, Yih Chung and
+             Tan, Gavin Siew Wei and Schmetterer, Leopold and Kim, Rae-Young and
+             Wong, Damon and Ang, Marcus and Hussain, Rahat and Mehta, Jodhbir S. and
+             Aung, Tin and Cheng, Lionel Tim-Ee and Tran, Nguyen Tuan Anh and
+             Cheng, Chee Leong and Wong, Tien Yin and Moshfeghi, Darius M. and Liu, Nan and
+             Tan, Iain Beehuat and Lim, Soon Thye and Klang, Eyal and Lim, Tony Kiat Hon and
+             Goh, Rick Siow Mong and Liu, Yong and Ting, Daniel Shu Wei},
+  journal = {Nature Medicine},
+  year    = {2026},
+  doi     = {10.1038/s41591-026-04655-5},
+  url     = {https://www.nature.com/articles/s41591-026-04655-5}
+}
+```

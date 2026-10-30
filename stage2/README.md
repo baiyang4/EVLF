@@ -86,8 +86,3 @@ bash run_scripts/run_full_grpo.sh
 
 Training hyperparameters and the KL schedule are documented in
 [docs/training_implementation_details.md](docs/training_implementation_details.md).
-
-## Notes
-
-- `WANDB_API_KEY` is not shipped in any script; use `~/.netrc` or `wandb login`.
-- All example service endpoints are `127.0.0.1`; do not expose the NLI service.
