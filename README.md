@@ -9,7 +9,7 @@ visual question answering, and medical visual grounding.
 
 **[A clinical multimodal vision language foundation model with fine-grain explainability](https://www.nature.com/articles/s41591-026-04655-5)**
 
-Yang Bai, Haoran Cheng, Yang Zhou, et al. · *Nature Medicine*, 2026.
+*Nature Medicine*, 2026.
 
 ## Released model
 
