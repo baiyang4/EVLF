@@ -31,7 +31,7 @@ SFT/
 │       └── tsm_transform.py        # disease-encoder image transforms
 ├── segment_anything/               # MedSAM (SAM ViT-B) encoder code
 ├── eval/
-│   └── eval_batch_sam.py           # multi-GPU inference for the EVLF (SAM) model
+│   └── eval_batch_sam.py           # inference utility used after Stage 2
 ├── tools/
 │   └── merge_lora_sam.py           # fold LLM + aux-encoder LoRA into the base weights
 ├── scripts/
@@ -44,10 +44,10 @@ SFT/
 ├── demo/
 │   ├── demo_meta.json              # 100-sample demo meta (training)
 │   ├── demo.jsonl                  # 100 SLAKE samples (training)
-│   ├── demo_test.json              # 30-sample demo test set (evaluation)
+│   ├── demo_test.json              # 30-sample test set used after Stage 2
 │   ├── images/                     # 100 demo images
 │   ├── run_demo.sh                 # one-GPU demo training script
-│   └── run_test_demo.sh            # demo inference + scoring script
+│   └── run_test_demo.sh            # Stage-2 model inference + scoring demo
 ├── pretrained/                     # the pretrained checkpoints (or symlinks)
 ├── environment.yaml
 └── README.md
@@ -199,59 +199,19 @@ The demo reuses the same trainer, model code and data pipeline as the full run
 (including `--use_tsm2 False --use_aux_lora 64`) — only the meta path, batch
 size and `max_steps` are reduced. A checkpoint is written to `work_dirs/demo_evlf/`.
 
-## Testing / Evaluation
-
-Testing is a three-step pipeline: **merge → infer → score**.
-
-### 1. Merge the trained LoRA
+## Merge for Stage 2
 
 Training saves a base + LoRA checkpoint (LLM LoRA r=128 and the two auxiliary
-encoder LoRAs). Fold them into the weights before inference:
+encoder LoRAs). Fold them into the weights to initialise Stage-2 GRPO:
 
 ```bash
+export PYTHONPATH="$(pwd):${PYTHONPATH}"
 python tools/merge_lora_sam.py  work_dirs/<train_out>  work_dirs/<train_out>_merged
 ```
 
 The merged directory is a plain HuggingFace model (`use_llm_lora=0`,
 `use_aux_lora=0` in its `config.json` — the LoRA is already folded in).
 
-### 2. Run inference
-
-`eval/eval_batch_sam.py` does multi-GPU (DDP) batched inference. The
-`--question-file` is a JSON array of objects:
-
-```json
-[ {"question_id": 0, "image": "xmlab1/source.jpg",
-   "text": "<image>\nWhat modality is used to take this image?"} ]
-```
-
-It loads the model with `InternVLSAMModel` (pixel + disease-encoder + MedSAM
-inputs are built automatically) and writes predictions to `--answers-file` as
-JSONL (`question_id`, `prompt`, `text` = the model's answer).
-
-```bash
-CUDA_VISIBLE_DEVICES=0 python eval/eval_batch_sam.py \
-    --checkpoint work_dirs/<train_out>_merged \
-    --question-file  <your_test>.json \
-    --answers-file   work_dirs/eval/preds.json \
-    --image-folder   <image_root> \
-    --model-name sam --batch-size 8 --num-gpus 1
-```
-
-Then score the predictions against your ground-truth answers (task-appropriate
-metric: exact / VQA accuracy for open QA, F1 for multi-label classification).
-
-### Demo test (30 samples, one command)
-
-```bash
-# uses the released Stage-1 merged base by default
-bash demo/run_test_demo.sh
-
-# test your own merged checkpoint
-CKPT=work_dirs/<train_out>_merged bash demo/run_test_demo.sh
-```
-
-`run_test_demo.sh` runs `eval/eval_batch_sam.py` on `demo/demo_test.json`
-(30 SLAKE VQA items with reference answers) and prints a lenient VQA accuracy
-plus a few example predictions. Predictions are written to
-`work_dirs/demo_test/preds.json`.
+Use this merged checkpoint as `MODEL_PATH` for [Stage-2 GRPO](../stage2/README.md#run).
+The final model is tested after GRPO; see
+[Stage 2 testing](../stage2/README.md#testing-after-grpo).

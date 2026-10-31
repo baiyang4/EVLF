@@ -19,7 +19,7 @@ This released version is trained on publicly available datasets. The download in
 BF16 weights in Safetensors format, the tokenizer, model code, and an `inference.py`
 entry point.
 
-After setting up the [SFT/testing environment](#environments), run the following from
+After setting up the [`internvl` environment](#environments), run the following from
 the repository root to download the checkpoint and its inference dependencies:
 
 ```bash
@@ -62,8 +62,8 @@ The pipeline has three steps:
    auxiliary encoders on medical image–text data.
 2. **Stage 2 — GRPO** (`stage2/`): reinforcement learning from the SFT model with
    verifiable task rewards (accuracy) plus a clinical reasoning-alignment reward (`r_think`).
-3. **Testing** (`SFT/eval/`): multi-GPU inference + scoring, used for both the SFT and the
-   GRPO model.
+3. **Testing after Stage 2** (`SFT/eval/`): multi-GPU inference and scoring of the
+   final merged GRPO model.
 
 Each subdirectory has its own README with full details:
 [SFT/README.md](SFT/README.md) · [stage2/README.md](stage2/README.md).
@@ -74,7 +74,7 @@ Each subdirectory has its own README with full details:
 
 ```
 EVLF_FM/
-├── SFT/        # Stage 1: supervised fine-tuning (also hosts the shared model code + eval)
+├── SFT/        # Stage 1: supervised fine-tuning; shared model code and evaluation utilities
 ├── stage2/     # Stage 2: GRPO reinforcement learning
 └── README.md   # (this file)
 ```
@@ -89,11 +89,11 @@ The two stages use **different** conda environments (different pinned torch/tran
 
 | | env | key pins |
 |---|---|---|
-| Stage 1 (SFT) + testing | `internvl` | py3.9, torch 2.1, transformers 4.37 |
+| Stage 1 (SFT); final-model inference and testing | `internvl` | py3.9, torch 2.1, transformers 4.37 |
 | Stage 2 (GRPO) | see `stage2/environment.yml` | py3.10, torch 2.6, transformers 4.49 |
 
 ```bash
-# Stage 1 / testing
+# SFT and final-model inference/testing
 conda env create -f SFT/environment.yaml && conda activate internvl
 pip install flash-attn==2.4.0.post1 --no-build-isolation
 # Stage 2
@@ -137,39 +137,38 @@ THINK_REF_POOL=/path/to/training_data \
 bash run_scripts/run_full_grpo.sh
 ```
 
-The GRPO checkpoint carries LoRA adapters — **merge it** before testing, with the same tool:
-
-```bash
-python ../SFT/tools/merge_lora_sam.py  output/internvl3_8b_grpo  output/internvl3_8b_grpo_merged
-```
-
 Demo (100 classification samples, verifies the pipeline end-to-end):
 
 ```bash
 MODEL_PATH=OpenGVLab/InternVL3-8B bash run_scripts/run_demo_grpo.sh
 ```
 
-## Step 3 — Testing
+## Step 3 — Testing after Stage 2
 
-Evaluation uses the same script for both stages (run in the `internvl` env). Point
-`--checkpoint` at any **merged** model — the SFT model or the merged GRPO model:
+Merge the final GRPO checkpoint, then run inference and score the predictions.
+Run the following from `stage2/` using the `internvl` environment:
 
 ```bash
 conda activate internvl
-cd SFT
-python eval/eval_batch_sam.py \
-    --checkpoint /path/to/merged_model \
+export PYTHONPATH="$(pwd)/../SFT:${PYTHONPATH}"
+python ../SFT/tools/merge_lora_sam.py \
+    output/internvl3_8b_grpo output/internvl3_8b_grpo_merged
+python ../SFT/eval/eval_batch_sam.py \
+    --checkpoint output/internvl3_8b_grpo_merged \
     --question-file <test.json> \
     --image-folder <images> \
-    --answers-file work_dirs/eval/preds.json \
+    --answers-file output/eval/preds.json \
     --model-name sam --batch-size 8
 ```
 
-Quick demo test (30-sample SLAKE VQA, lenient accuracy):
+Quick demo test of the merged GRPO model (30-sample SLAKE VQA, lenient accuracy):
 
 ```bash
-CKPT=/path/to/merged_model bash demo/run_test_demo.sh
+bash ../SFT/demo/run_test_demo.sh
 ```
+
+See [Stage 2 testing](stage2/README.md#testing-after-grpo) for the input format,
+scoring, and custom checkpoint options.
 
 ## Citation
 

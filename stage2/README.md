@@ -82,3 +82,61 @@ bash run_scripts/run_full_grpo.sh
 - **accuracy** — IoU for grounding; answer-overlap F1 for classification / VQA.
 - **think_align** — clinical reasoning-alignment reward (token-level OT + contradiction gate +
   contrastive baseline), weight `alpha = 0.25`.
+
+## Testing after GRPO
+
+Evaluate the final Stage-2 model with **merge → infer → score**. The merge and
+inference utilities live under `../SFT` and use the `internvl` environment.
+Run the following commands from `stage2/`.
+
+### 1. Merge the GRPO checkpoint
+
+Fold the trained LoRA adapters into the model weights:
+
+```bash
+conda activate internvl
+export PYTHONPATH="$(pwd)/../SFT:${PYTHONPATH}"
+python ../SFT/tools/merge_lora_sam.py \
+    output/internvl3_8b_grpo output/internvl3_8b_grpo_merged
+```
+
+### 2. Run inference
+
+`../SFT/eval/eval_batch_sam.py` performs multi-GPU (DDP) batched inference.
+The `--question-file` is a JSON array of objects:
+
+```json
+[ {"question_id": 0, "image": "xmlab1/source.jpg",
+   "text": "<image>\nWhat modality is used to take this image?"} ]
+```
+
+It loads `InternVLSAMModel`, builds the image inputs, and writes predictions to
+`--answers-file` as JSONL (`question_id`, `prompt`, `text` = the model's answer).
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python ../SFT/eval/eval_batch_sam.py \
+    --checkpoint output/internvl3_8b_grpo_merged \
+    --question-file <your_test>.json \
+    --image-folder <image_root> \
+    --answers-file output/eval/preds.json \
+    --model-name sam --batch-size 8 --num-gpus 1
+```
+
+### 3. Score predictions
+
+Compare the predictions with your ground-truth answers using the task's metric
+(for example, exact / VQA accuracy for open QA or F1 for multi-label classification).
+
+### Demo test (30 samples)
+
+```bash
+# defaults to output/internvl3_8b_grpo_merged
+bash ../SFT/demo/run_test_demo.sh
+
+# use another merged GRPO checkpoint (absolute path)
+CKPT=/path/to/grpo_merged bash ../SFT/demo/run_test_demo.sh
+```
+
+The demo uses `../SFT/demo/demo_test.json` (30 SLAKE VQA items with reference answers)
+and prints a lenient VQA accuracy plus a few example predictions. Predictions are
+written to `output/demo_test/preds.json`.
